@@ -14,12 +14,9 @@ function App() {
       case "men":
         return users.filter((user) => user.gender === "male");
       case "byName":
-        return [...users].sort((a, b) =>
-          a.name.first.localeCompare(b.name.first)
-        );
-
+        return users.toSorted((a, b) => (a.name.first > b.name.first ? 1 : -1));
       case "byAge":
-        return [...users].sort((a, b) => a.dob.age - b.dob.age);
+        return users.toSorted((a, b) => a.dob.age - b.dob.age);
       default:
         return users;
     }
