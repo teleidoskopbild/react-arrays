@@ -2,35 +2,35 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa; /* Light background for contrast */
+  background-color: #b1cde9;
 }
 
 .App {
   padding: 20px;
-  max-width: 800px; /* Limit the width of the app */
-  margin: 0 auto; /* Center the app */
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .button-group {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 button {
   margin-right: 10px;
   padding: 10px 15px;
   border: none;
-  border-radius: 4px; /* Rounded corners */
+  border-radius: 4px;
   background-color: #f0f0f0;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #e0e0e0;
+  background-color: #d1cbcb;
 }
 
 button.active {
-  background-color: #007bff; /* Primary color for active button */
+  background-color: #007bff;
   color: white;
 }
 
@@ -40,24 +40,24 @@ ul {
 }
 
 li {
-  border: 1px solid #ddd; /* Light gray border */
+  border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  background-color: #fff; /* White background for each user card */
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 li img {
-  border-radius: 50%; /* Circular image */
+  border-radius: 50%;
   margin-right: 10px;
-  width: 50px; /* Fixed size for images */
-  height: 50px; /* Fixed size for images */
+  width: 50px;
+  height: 50px;
 }
 
 p {
-  margin: 5px 0; /* Add spacing between paragraphs */
-  color: #333; /* Darker text color for readability */
+  margin: 5px 0;
+  color: #333;
 }

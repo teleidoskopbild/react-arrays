@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import { users } from "./data/users.js";
 import Buttons from "./components/Buttons.jsx";
-import UserList from "./components/UserList.jsx";
+import UserDisplay from "./components/UserDisplay.jsx";
 
 function App() {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -19,7 +19,7 @@ function App() {
         );
 
       case "byAge":
-        return [...users].sort((a, b) => a.age - b.age);
+        return [...users].sort((a, b) => a.dob.age - b.dob.age);
       default:
         return users;
     }
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Buttons activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
-      <UserList users={filteredUsers} />
+      <UserDisplay users={filteredUsers} />
     </div>
   );
 }
